@@ -107,5 +107,3 @@ def on_data(data):
         print('{} message from {} to {}'.format(data["type"], sender_sid, target_sid))
     socketio.emit('data', data, room=target_sid)
 
-if __name__ == "__main__":
-    socketio.run(app, debug=True)
